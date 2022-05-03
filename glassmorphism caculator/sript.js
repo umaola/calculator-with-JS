@@ -17,11 +17,7 @@ button_input.forEach((button_class) => {
             input.value = "";
             equals_pressed = 0;
         }
-        //display value of each button
-        // input.value += button_class.value;
-
-        // I add an if statement here so the '=' doesn't get added to the expression... 
-        // ...because of the eval method you used in line 47
+        
         if(button_class.value !== '='){
             input.value += button_class.value;
         }
