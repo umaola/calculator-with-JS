@@ -18,6 +18,7 @@ button_input.forEach((button_class) => {
             equals_pressed = 0;
         }
         
+        // this to check if the value is '='
         if(button_class.value !== '='){
             input.value += button_class.value;
         }
