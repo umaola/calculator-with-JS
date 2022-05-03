@@ -17,9 +17,21 @@ button_input.forEach((button_class) => {
             input.value = "";
             equals_pressed = 0;
         }
-        //display value of each button
-        input.value += button_class.value;
+        
+        if(button_class.value !== '='){
+            input.value += button_class.value;
+        }
     });
+});
+
+// to clear the input.value
+clear.addEventListener("click", () => {
+    input.value = "";
+});
+
+// to remove the last character in the input.value
+erase.addEventListener("click", () => {
+    input.value = input.value.slice(0, -1);
 });
 
 //solve the user's input when clicked on equal sign
